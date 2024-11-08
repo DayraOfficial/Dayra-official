@@ -3,114 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dayra - Portofolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portofolio Dayra</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #383838; /* Latar belakang default */
+            line-height: 1.6;
+            color: #333; /* Teks berwarna hitam */
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a; /* Hitam */
+            color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in; /* Animasi muncul */
+        }
+        .container {
+            width: 90%; /* Lebar lebih besar */
+            max-width: 1200px; /* Maksimal lebar */
+            margin: auto;
+            padding: 20px;
+        }
+        .developer-info, .app-example {
+            background: white; /* Putih */
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideIn 0.5s forwards; /* Animasi slide in */
+        }
+        .developer-info {
+            animation-delay: 0.5s; /* Delay untuk developer-info */
+        }
+        .app-example {
+            animation-delay: 1s; /* Delay untuk app-example */
+        }
+        h2 {
+            color: #1a1a1a; /* Hitam */
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        h3 {
+            color: #00bfff; /* Biru muda */
+            font-size: 22px;
+            margin-top: 15px;
+        }
+        p {
+            font-size: 16px;
+            color: #666; /* Abu-abu untuk teks deskripsi */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a; /* Hitam */
+            color: white;
+            margin: 0;
+            position: relative;
+            bottom: 0;
+            padding: 0;
+            width: 100%;
+            animation: fadeIn 1s ease-in; /* Animasi muncul */
+            animation-delay: 1.5s; /* Delay untuk footer */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .theme-toggle {
+            cursor: pointer;
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            background-color: #00bfff; /* Biru muda */
+            animation: fadeIn 1s ease-in; /* Animasi muncul */
+        }
+        .theme-toggle:hover {
+            background-color: #0080ff; /* Warna lebih gelap saat hover */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Dayra</h1>
-            <img src="images/ichigo.jpg" alt="Avatar Ichigo" class="avatar">
-            <nav>
-                <ul>
-                    <li><a href="#about">Tentang Saya</a></li>
-                    <li><a href="#projects">Proyek</a></li>
-                    <li><a href="#contact">Kontak</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+
+<header>
+    <h1> Dayra Official</h1>
     
-    <section id="about">
-        <div class="container">
-            <h2>Tentang Saya</h2>
-            <p>Halo! Saya Dayra, seorang pengembang web yang bersemangat dan selalu ingin belajar hal baru.</p>
-        </div>
-    </section>
+</header>
+
+<div class="container ">
+    <div class="developer-info">
+        <h2>Tentang Developer</h2>
+        <p><strong>Nama:</strong> Dayra</p>
+        <p><strong>Umur:</strong> 18 Tahun</p>
+        <p><strong>Asal:</strong> Sulawesi</p>
+        <p><strong>Hobi:</strong> Mengoprek dan memodifikasi aplikasi Android.</p>
+    </div>
+
+    <div class="app-example">
+        <h2>Contoh Aplikasi Mod</h2>
+        <h3>Aplikasi Mod 1: Game XYZ</h3>
+        <p>Deskripsi: Modifikasi dari Game XYZ yang memberikan akses tak terbatas ke item premium dan fitur eksklusif, meningkatkan pengalaman bermain game.</p>
+        
+        <h3>Aplikasi Mod 2: Aplikasi Musik ABC</h3>
+        <p>Deskripsi: Aplikasi ini memungkinkan pengguna untuk mendengarkan musik tanpa iklan dan mengunduh lagu secara gratis dari berbagai genre.</p>
+        
+        <h3>Aplikasi Mod 3: Aplikasi Sosial DEF</h3>
+        <p>Deskripsi: Modifikasi aplikasi sosial ini memungkinkan pengguna untuk mengakses fitur pro secara gratis dan menghilangkan batasan yang ada pada versi biasa.</p>
+    </div>
     
-    <section id="projects">
-        <div class="container">
-            <h2>Proyek Saya</h2>
-            <ul>
-                <li>Proyek 1 - Deskripsi proyek 1</li>
-                <li>Proyek 2 - Deskripsi proyek 2</li>
-                <li>Proyek 3 - Deskripsi proyek 3</li>
-            </ul>
-        </div>
-    </section>
     
-    <section id="contact">
-        <div class="container">
-            <h2>Kontak</h2>
-            <p>Email: dayra@example.com</p>
-            <p>Telepon: 012-3456789</p>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Dayra. Semua hak dilindungi.</p>
-        </div>
-    </footer>
+        <div class="app-example">
+        <h2>Contoh Aplikasi Mod</h2>
+        <h3>Aplikasi Mod 1: Game XYZ</h3>
+        <p>Deskripsi: Modifikasi dari Game XYZ yang memberikan akses tak terbatas ke item premium dan fitur eksklusif, meningkatkan pengalaman bermain game.</p>
+        
+        <h3>Aplikasi Mod 2: Aplikasi Musik ABC</h3>
+        <p>Deskripsi: Aplikasi ini memungkinkan pengguna untuk mendengarkan musik tanpa iklan dan mengunduh lagu secara gratis dari berbagai genre.</p>
+        
+        <h3>Aplikasi Mod 3: Aplikasi Sosial DEF</h3>
+        <p>Deskripsi: Modifikasi aplikasi sosial ini memungkinkan pengguna untuk mengakses fitur pro secara gratis dan menghilangkan batasan yang ada pada versi biasa.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy;2023 Dayra. Semua Hak Dilindungi.</p>
+</footer>
+
+<script>
+    function setTheme(theme) {
+        const body = document.body;
+        if (theme === 'white') {
+            body.style.backgroundColor = '#f0f0f0';
+            body.style.color = '#333';
+        } else if (theme === 'black') {
+            body.style.backgroundColor = '#333';
+            body.style.color = '#f0f0f0';
+        } else if (theme === 'dark-red') {
+            body.style.backgroundColor = '#8B0000';
+            body.style.color = '#f0f0f0';
+        }
+    }
+
+    function toggleThemeOptions() {
+        const themeOptions = document.getElementById('themeOptions');
+        if (themeOptions.style.display === 'none' || themeOptions.style.display === '') {
+            themeOptions.style.display = 'block';
+        } else {
+            themeOptions.style.display = 'none';
+        }
+    }
+</script>
+
 </body>
 </html>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-.avatar {
-    width: 150px;
-    border-radius: 50%;
-    margin: 20px 0;
-}
-
-nav ul {
-    padding: 0;
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px 0;
-    background: #fff;
-    margin: 20px 0;
-    border-radius: 5px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-}
-</style>
