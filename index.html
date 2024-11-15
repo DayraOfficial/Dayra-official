@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Dayra</title>
+    <title>Dev Dayra</title>
+    <link rel="icon" type="image" href="https://i.ibb.co.com/1dk24Gy/13929f861fd0c88b8a30311e81ddbddb.jpg" border-radius="10px">
     <style>
+    link {
+            width: 50px; /* Atur ukuran gambar sesuai kebutuhan */
+            height: auto; /* Memastikan proporsi gambar tetap terjaga */
+            margin-right: 10px; /* Jarak antara gambar dan judul */
+            border-radius: 10px; /* Atur radius sudut di sini */
+        }
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -39,14 +46,20 @@
             animation: slideIn 0.5s forwards; /* Animasi slide in */
         }
         .developer-info {
-            animation-delay: 0.5s; /* Delay untuk developer-info */
+            animation-delay: 0.5s; 
+            color: white;
+            background-color: #1a1a1a;/* Delay untuk developer-info */
         }
         .app-example {
-            animation-delay: 1s; /* Delay untuk app-example */
+            animation-delay: 1s; 
+                        transform: scale(0.95);
+            background-color: #1a1a1a;/* Delay untuk app-example */
         }
         h2 {
-            color: #1a1a1a; /* Hitam */
+            color: #7e7e7e; /* Hitam */
             font-size: 28px;
+            position: center;
+            display: flex;
             margin-bottom: 10px;
         }
         h3 {
@@ -56,7 +69,8 @@
         }
         p {
             font-size: 16px;
-            color: #666; /* Abu-abu untuk teks deskripsi */
+                        transform: scale(0.95);
+            color: #8d8a8a; /* Abu-abu untuk teks deskripsi */
         }
         footer {
             text-align: center;
@@ -104,34 +118,117 @@
         .theme-toggle:hover {
             background-color: #0080ff; /* Warna lebih gelap saat hover */
         }
+.download-link {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #4CAF50; /* Warna hijau */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+            transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease; /* Transisi halus */
+        }
+
+        .download-link:hover {
+            background-color: #45a049; /* Warna hijau lebih gelap saat hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam saat hover */
+        }
+
+        .download-link:active {
+            transform: scale(0.95); /* Efek mengecil saat diklik */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Kembali ke bayangan normal saat aktif */
+        }
+        img{
+          float: left; /* Mengapungkan gambar ke kiri */
+            margin-right: 10px; /* Jarak antara gambar dan teks */
+            width: 100px; /* Atur lebar gambar sesuai kebutuhan */
+            height: auto; /* Menjaga proporsi gambar */
+        }
+        
+        
+.search-container {
+    margin-bottom: 20px;
+    width: 100%;
+    
+}
+
+#search-input {
+    padding: 10px;
+    color: white;
+    width: 200px;
+}
+
+#search-button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+/* Animasi untuk teks yang ditemukan */
+.highlight {
+    animation: highlight-animation 1s ease-in-out;
+}
+
+@keyframes highlight-animation {
+    0% {
+        background-color: #ffffff;
+        color: #00bfff;
+        width: 100%;
+        border-radius:5px;
+    }
+    50% {
+        background-color: #505050;
+        color: white;
+        border-radius:5px;
+    }
+    100% {
+        background-color: #ffffff;
+        color: #00bfff;
+        border-radius:5px;
+    }
+}
     </style>
 </head>
 <body>
 
 <header>
     <h1> Dayra Official</h1>
+        <div class="search-container">
+        <input type="text" id="search-input" placeholder="Cari...">
+        <button id="search-button">Cari</button>
+    </div>
+    <div id="search-results"></div>
     
 </header>
 
 <div class="container ">
-    <div class="developer-info">
-        <h2>Tentang Developer</h2>
-        <p><strong>Nama:</strong> Dayra</p>
-        <p><strong>Umur:</strong> 18 Tahun</p>
-        <p><strong>Asal:</strong> Sulawesi</p>
-        <p><strong>Hobi:</strong> Mengoprek dan memodifikasi aplikasi Android.</p>
-    </div>
+
 
     <div class="app-example">
-        <h2>Contoh Aplikasi Mod</h2>
-        <h3>Aplikasi Mod 1: Game XYZ</h3>
-        <p>Deskripsi: Modifikasi dari Game XYZ yang memberikan akses tak terbatas ke item premium dan fitur eksklusif, meningkatkan pengalaman bermain game.</p>
+        <h2>GAME</h2>
+        <h3>Aplikasi Mod 1: <dayra id="pou">Pou</dayra></h3>
+        <p>Deskripsi:<br>
+        <img src="icon.png" alt="Deskripsi Gambar">
+Game Pou adalah permainan virtual pet yang memungkinkan kamu untuk merawat makhluk alien lucu ini dengan cara yang lebih seru dan menarik, terutama dengan kehadiran Pou Mod Dayra! Dalam versi modifikasi ini, kamu tidak hanya merawat Pou, tetapi juga mendapatkan pengalaman bermain yang jauh lebih kaya dan menyenangkan.</p>
+<a href="https://drive.google.com/file/d/10LSxVzI0HeNEm4Tf-CkXe3dvXLjqO-_x/view?usp=drivesdk" class="download-link">Unduh Sekarang</a>
         
-        <h3>Aplikasi Mod 2: Aplikasi Musik ABC</h3>
-        <p>Deskripsi: Aplikasi ini memungkinkan pengguna untuk mendengarkan musik tanpa iklan dan mengunduh lagu secara gratis dari berbagai genre.</p>
+
         
-        <h3>Aplikasi Mod 3: Aplikasi Sosial DEF</h3>
-        <p>Deskripsi: Modifikasi aplikasi sosial ini memungkinkan pengguna untuk mengakses fitur pro secara gratis dan menghilangkan batasan yang ada pada versi biasa.</p>
+        
+
+        
+        
+
     </div>
     
     
@@ -145,6 +242,14 @@
         
         <h3>Aplikasi Mod 3: Aplikasi Sosial DEF</h3>
         <p>Deskripsi: Modifikasi aplikasi sosial ini memungkinkan pengguna untuk mengakses fitur pro secara gratis dan menghilangkan batasan yang ada pada versi biasa.</p>
+    </div>
+    
+    
+        <div class="developer-info">
+        <h2>Tentang Developer</h2>
+        <p><strong>Nama:</strong> Dayra</p>
+        <p><strong>Umur:</strong> 18 Tahun</p>
+        <p><strong>Asal:</strong> Sulawesi</p>
     </div>
 </div>
 
@@ -175,7 +280,34 @@
             themeOptions.style.display = 'none';
         }
     }
+    
+    
+    // script.js
+// script.js
+// script.js
+document.getElementById('search-button').addEventListener('click', function() {
+    const query = document.getElementById('search-input').value.toLowerCase();
+    
+    // Mencari elemen dengan ID yang sesuai
+    const targetElement = document.querySelector(`#${query}`);
+    
+    // Menghapus highlight dari elemen sebelumnya
+    const highlightedElements = document.querySelectorAll('.highlight');
+    highlightedElements.forEach(element => {
+        element.classList.remove('highlight');
+    });
+
+    if (targetElement) {
+        // Jika elemen ditemukan, gulir ke elemen tersebut
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+        
+        // Tambahkan kelas highlight untuk animasi
+        targetElement.classList.add('highlight');
+    } else {
+        alert('Tidak ada hasil ditemukan.');
+    }
+});
 </script>
 
 </body>
-</html>
+    </html>
